@@ -1,1 +1,44 @@
-starship.toml
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = '''
+[┏❯](bold cyan)$directory$character$time$character$os$character$shell$character$status$username$character$hostname$character
+[┗](bold cyan)$character '''
+
+[character]
+success_symbol = '[❯](bold cyan)'
+error_symbol = '[❯](bold red)'
+
+[directory]
+format = ' [$path]($style)[$read_only]($read_only_style)'
+
+[time]
+disabled = false
+format = '[$time]($style)'
+
+[status]
+disabled = false
+
+[os]
+disabled = false
+style = 'bold blue'
+
+[os.symbols]
+Arch = "󰚾 "
+
+[shell]
+disabled = false
+style = 'bold cyan'
+format = '[$indicator]($style)'
+
+[hostname]
+ssh_only = false
+format = '[$hostname](bold green) '
+trim_at = '.companyname.com'
+disabled = false
+
+[username]
+style_user = 'cyan bold'
+style_root = 'black bold'
+format = '[$user]($style) '
+disabled = false
+show_always = true
