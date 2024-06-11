@@ -6,6 +6,7 @@ rm -rf waybar/waybar
 rm -rf New-Life-Hyde/
 rm hypr/*
 rm -rf New-Life
+rm -rf fastfetch
 
 cp ~/.config/starship.toml starship/
 cp ~/.config/kitty/kitty.conf kitty/
@@ -14,3 +15,4 @@ cp -r ~/.config/hyde/themes/New\ Life ./
 mv 'New Life' New-Life-Hyde
 cp ~/.config/hypr/keybindings.conf hypr/
 cp -r ~/.themes/New-Life ./
+cp -r ~/.config/fastfetch ./
