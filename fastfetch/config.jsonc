@@ -18,7 +18,7 @@
         {
             "type": "os",
             "key": "   OS",
-            "keyColor": "red"
+            "keyColor": "green"
         },
         {
             "type": "display",
